@@ -1,6 +1,6 @@
 # Seattle-python-401d18: Polo Gonzalez, Harvey Francois, Rachel Freeland, Tyler Egashira
 ## Python 401 Final Project: Prep #1 - Team Agreement
-## Project: 
+## Project: CiviDex
 ## Slide Deck
 ## Cooperation Plan
 #### Key Strengths:
