@@ -1,4 +1,4 @@
-# Project:
+# Project: CiviDex
 
 ## Contributors:  Harvey Francois, Polo Gonzalez, Rachel Freeland, Tyler Egashira
 
