@@ -42,19 +42,17 @@ A user will be able to log in and out from the service.
 A user will be able to view the fact provided.
 
 ### Data Flow
-Describe the flow of data in your application. Write out what happens from the time the user begins using the app to the time the user is done with the app. Think about the “Happy Path” of the application. Describe through visuals and text what requests are made, and what data is processed, in addition to any other details about how the user moves through the site.
+Two data flows:
 
-Non-Functional Requirements (301 & 401 only)
-Non-functional requirements are requirements that are not directly related to the functionality of the application but still important to the app.
+Twitter bot -> Searches API -> Gets Information -> Formats information -> Connects to twitter -> Posts to twitter
 
-Examples include:
+Front Page -> On Load(Get Tweet/Random fact) -> User clicks contribute -> Fills in form -> data goes to another admin only page -> Admin can click submit to api -> Api will validate user, then Post to API
 
-Security
-Usability
-Testability
-etc….
-Pick 2 non-functional requirements and describe their functionality in your application.
+### Schema
+![schema](schema.png)
 
-If you are stuck on what non-functional requirements are, do a quick online search and do some research. Write a minimum of 3-5 sentences to describe how the non-functional requirements fits into your app.
+### Wireframe
+![wireframe](wireframe.png)
 
-You MUST describe what the non-functional requirement is and how it will be implemented. Simply saying “Our project will be testable for testibility” is NOT acceptable. Tell us how, why, and what.
+### Domain Model
+![domain_model](domain_model.png)
