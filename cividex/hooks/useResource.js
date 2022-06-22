@@ -12,7 +12,7 @@ export default function useResource() {
             return;
         }
         try {
-            const response = await axios.get(url, config());
+            const response = await axios.get(apiUrl, config());
             return response.data;
         } catch (err) {
             handleError(err);
@@ -22,7 +22,7 @@ export default function useResource() {
     async function createResource(info) {
         try {
             await axios.post(apiUrl, info, config());
-            mutate(); // mutate causes complete collection to be refetched
+            await mutate(); // mutate causes complete collection to be refetched
         } catch (err) {
             handleError(err);
         }
@@ -32,7 +32,7 @@ export default function useResource() {
         try {
             const url = apiUrl + id;
             await axios.delete(url, config());
-            mutate(); // mutate causes complete collection to be refetched
+            await mutate(); // mutate causes complete collection to be refetched
         } catch (err) {
             handleError(err);
         }
