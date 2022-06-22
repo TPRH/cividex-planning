@@ -8,8 +8,10 @@ import useResource from '../hooks/useResource'
 
 
 export default function Home() {
-  const { user, login } = useAuth();
+  const { user, login, logout } = useAuth();
   const { resources } = useResource();
+
+  if(!user) return <LoginForm onLogin={login} />
 
   return (
     <div>

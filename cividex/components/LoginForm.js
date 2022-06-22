@@ -1,5 +1,6 @@
+import { useState } from "react";
 
-export default function({ onLogin }) {
+export default function LoginForm({ onLogin }) {
   async function handleSubmit(e) {
     e.preventDefault();
     onLogin(e.target.username.value, e.target.password.value)
