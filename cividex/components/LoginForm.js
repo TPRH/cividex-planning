@@ -11,6 +11,7 @@ export default function({ onLogin }) {
         <legend>Log In</legend>
         <input name="username" placeholder="username" />
         <input type='password' name="password" placeholder="password" />
+        <button type='submit'>Login</button>
       </fieldset>
     </form>
   )

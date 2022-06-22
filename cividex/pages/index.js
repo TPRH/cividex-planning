@@ -21,6 +21,8 @@ export default function Home() {
       <main>
         <h1>Hello World from CiviDex</h1>
         <LoginForm onLogin={login} />
+        {user && user.username}
+        {resources && resources.map(e => <p key={e.id}>{e.fact}</p>)}
         <Form />
       </main>
       <Footer />
